@@ -1,0 +1,1 @@
+from Pessoa.models import veiculo
