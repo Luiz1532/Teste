@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'interview_project_api',
     'Pessoa',
     'Garagem',
 ]
@@ -79,7 +81,7 @@ WSGI_APPLICATION = 'Interview_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'INTERVIEW_PROJECT',
+        'NAME': 'MY_PROJECT',
         'USER': 'luiz',
         'PASSWORD': '12345678',
         'HOST': 'localhost',

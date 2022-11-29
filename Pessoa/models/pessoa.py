@@ -8,7 +8,7 @@ class Pessoa(models.Model):
         (1, 'Administrador'),
         (2, 'Consumidor'),
     ]
-    garagem = models.OneToOneField(Garagem, on_delete=models.CASCADE, null=True, blank=True)
+    garagem = models.OneToOneField(Garagem, on_delete=models.CASCADE, default=Garagem)
     nome = models.CharField('Nome da pessoa', max_length=250)
     email = models.CharField('E-mail', max_length=250)
     celular = models.CharField('Número de celular', max_length=250)
